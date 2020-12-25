@@ -36,7 +36,7 @@
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h3>0</h3>
+                <h3><?= $countPesananMasuk ?></h3>
 
                 <p>Pesanan Masuk</p>
               </div>
@@ -51,7 +51,7 @@
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner">
-                <h3>0</h3>
+                <h3><?= $countPesananSelesai ?></h3>
 
                 <p>Pesanan Selesai</p>
               </div>
@@ -96,13 +96,13 @@ var ctx = document.getElementById('chart_dashboard').getContext('2d');
     };
     pesanan_masuk = {
         label: 'Pesanan Masuk',
-        data: [],
+        data: <?= json_encode($chart_pesanan_masuk); ?>,
         backgroundColor: "rgba(14, 240, 32, 0.64)",
         borderWidth: 1
     };
     pesanan_selesai = {
         label: 'Pesanan Selesai',
-        data: [],
+        data: <?= json_encode($chart_pesanan_selesai); ?>,
         backgroundColor: "rgba(255, 153, 0, 0.64)",
         borderWidth: 1
     };

@@ -98,6 +98,8 @@
             },
         }).done(function(result) {
             console.log(result);
+            paypalm.minicartk.cart.destroy()
+            window.location = "<?= base_url('Transaksi') ?>";
         });
     });
 

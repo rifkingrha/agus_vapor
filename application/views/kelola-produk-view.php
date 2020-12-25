@@ -145,6 +145,10 @@
                 },
                 {
                     "data": "harga",
+                    render: function(data, type, row) {
+                            data = mask_rupiah(row.harga);
+                            return data;
+                    },
                     "className": "align-middle"
                 },
                 {

@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-	<title>Grocery Shoppy an Ecommerce Category Bootstrap Responsive Web Template | Home :: w3layouts</title>
+	<title>Agus Vapor - Shop</title>
 	<!--/tags -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -44,8 +44,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-4 logo_agile">
 				<h1>
 					<a href="<?= site_url('Home'); ?>">
-						<span>A</span>gus
-						<span>V</span>apor
+						<img src="<?= base_url('assets/img/logo.png') ?>" alt="" srcset="" style="height:80px;widht:50px">
 					</a>
 				</h1>
 			</div>
@@ -58,7 +57,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<span class="fa fa-user" aria-hidden="true"></span> <?php echo $this->session->userdata('username');?>
 					</li>
 					<li>
-						<a href="<?=site_url('Dashboard')?>">
+						<a href="<?=site_url('Profile')?>">
 							<span class="fa fa-pencil-square-o" aria-hidden="true"></span> Profile </a>
 					</li>
                     <li>
@@ -244,10 +243,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<a class="nav-stylehead" href="<?= site_url('produk'); ?>">Semua Produk</a>
 								</li>
 								<li class="">
-									<a class="nav-stylehead" href="faqs.html">Q & A</a>
+									<a class="nav-stylehead" href="<?= site_url('Pertanyaan'); ?>">Q & A</a>
 								</li>
 								<li class="">
-									<a class="nav-stylehead" href="contact.html">Kontak Kami</a>
+									<a class="nav-stylehead" href="<?= site_url('Kontak_kami'); ?>">Kontak Kami</a>
 								</li>
 							</ul>
 						</div>

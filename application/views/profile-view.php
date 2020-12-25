@@ -1,4 +1,4 @@
-<?php $this->load->view('template-dashboard/header'); ?>
+<?php $this->load->view('template-dashboard/header-pembeli'); ?>
 <!-- Modal -->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -155,4 +155,4 @@
     <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
-<?php $this->load->view('template-dashboard/footer'); ?>
+<?php $this->load->view('template-dashboard/footer-pembeli'); ?>

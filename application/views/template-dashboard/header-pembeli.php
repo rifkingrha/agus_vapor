@@ -46,10 +46,10 @@
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
-      <li class="nav-item d-none d-sm-inline-block">
+      <li class="nav-item d-none d-sm-inline-block active">
         <a href="<?= site_url('Profile') ?>" class="nav-link">Dashboard Pembeli</a>
       </li>
-      <li class="nav-item d-none d-sm-inline-block active">
+      <li class="nav-item d-none d-sm-inline-block">
         <a href="<?= site_url('Dashboard') ?>" class="nav-link">Dashboard Penjual</a>
       </li>
     </ul>
@@ -86,45 +86,30 @@
 
       <!-- Sidebar Menu -->
       <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false"> 
             <li class="nav-item">
-                <a href="<?= base_url('Dashboard') ?>" class="nav-link">
-                    <i class="nav-icon fas fa-home"></i>
+                <a href="<?= base_url('Profile') ?>" class="nav-link">
+                    <i class="nav-icon fas fa-user"></i>
                     <p>
-                        Beranda
+                        Profil
                     </p>
                 </a>
             </li>
           <li class="nav-item">
-            <a href="<?= base_url('Kelola_produk') ?>" class="nav-link">
-              <i class="nav-icon fas fa-archive"></i>
+            <a href="<?= base_url('Transaksi') ?>" class="nav-link">
+              <i class="nav-icon fas fa-shopping-cart"></i>
               <p>
-                Kelola Produk
+                Transaksi berlangsung
               </p>
             </a>
           </li>
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-cart-arrow-down"></i>
+          <li class="nav-item">
+            <a href="<?= base_url('Transaksi/transaksi_selesai') ?>" class="nav-link">
+              <i class="nav-icon fas fa-check-circle"></i>
               <p>
-                Pesanan
-                <i class="right fas fa-angle-left"></i>
+                Transaksi Selesai
               </p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="<?= base_url('Kelola_pesanan/pesanan_masuk') ?>" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Pesanan Masuk</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="<?= base_url('Kelola_pesanan/pesanan_selesai') ?>" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Pesanan Selesai</p>
-                </a>
-              </li>
-            </ul>
           </li>
         </ul>
       </nav>

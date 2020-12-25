@@ -110,6 +110,7 @@ class Produk_model extends CI_Model {
     // }
 
 	public function get_data_home_produk($id_category){
+        $this->db->order_by('a.id_produk', 'desc');
         $this->db->limit(3);
         $this->db->select('*');
         $this->db->from('tabel_produk a');

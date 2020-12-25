@@ -9,22 +9,13 @@
 						<h3>Quick Links</h3>
 						<ul>
 							<li>
-								<a href="about.html">About Us</a>
+								<a href="<?= site_url('Kontak_kami') ?>">Kontak Kami</a>
 							</li>
 							<li>
-								<a href="contact.html">Contact Us</a>
+								<a href="<?= site_url('Pertanyaan') ?>">Q & A</a>
 							</li>
 							<li>
-								<a href="help.html">Help</a>
-							</li>
-							<li>
-								<a href="faqs.html">Faqs</a>
-							</li>
-							<li>
-								<a href="terms.html">Terms of use</a>
-							</li>
-							<li>
-								<a href="privacy.html">Privacy Policy</a>
+								<a href="#">Privacy Policy</a>
 							</li>
 						</ul>
 					</div>
@@ -32,14 +23,12 @@
 						<h3>Get in Touch</h3>
 						<ul>
 							<li>
-								<i class="fa fa-map-marker"></i> 123 Sebastian, USA.</li>
+								<i class="fa fa-map-marker"></i> Bandung, Jawa Barat.</li>
 							<li>
-								<i class="fa fa-mobile"></i> 333 222 3333 </li>
-							<li>
-								<i class="fa fa-phone"></i> +222 11 4444 </li>
+								<i class="fa fa-mobile"></i> 0818 1818 1818 </li>
 							<li>
 								<i class="fa fa-envelope-o"></i>
-								<a href="mailto:example@mail.com"> mail@example.com</a>
+								<a href="mailto:example@mail.com"> agusvapor@gmail.com</a>
 							</li>
 						</ul>
 					</div>
@@ -51,31 +40,16 @@
 					<div class="social">
 						<ul>
 							<li>
-								<a class="icon fb" href="#">
+								<a class="icon fb" href="https://www.facebook.com/agusbensetiawan">
 									<i class="fa fa-facebook"></i>
 								</a>
 							</li>
 							<li>
-								<a class="icon tw" href="#">
-									<i class="fa fa-twitter"></i>
-								</a>
-							</li>
-							<li>
-								<a class="icon gp" href="#">
-									<i class="fa fa-google-plus"></i>
+								<a class="icon tw" href="https://www.instagram.com/agusse888/">
+									<i class="fa fa-instagram"></i>
 								</a>
 							</li>
 						</ul>
-					</div>
-					<div class="agileits_app-devices">
-						<h5>Download the App</h5>
-						<a href="#">
-							<img src="images/1.png" alt="">
-						</a>
-						<a href="#">
-							<img src="images/2.png" alt="">
-						</a>
-						<div class="clearfix"> </div>
 					</div>
 				</div>
 				<!-- //social icons -->
@@ -88,8 +62,7 @@
 	<!-- copyright -->
 	<div class="copy-right">
 		<div class="container">
-			<p>© 2017 Grocery Shoppy. All rights reserved | Design by
-				<a href="http://w3layouts.com"> W3layouts.</a>
+			<p>© 2020 <a href="https://www.facebook.com/agusbensetiawan"> Agus Vapor</a>. All rights reserved
 			</p>
 		</div>
 	</div>
@@ -99,7 +72,7 @@
 	<!-- jquery -->
 	<script src="<?=base_url('assets/js/jquery-2.1.4.min.js');?>"></script>
 	<!-- //jquery -->
-
+	<script src="<?=base_url('assets/js/script.js');?>"></script>
 	<!-- popup modal (for signin & signup)-->
 	<script src="<?=base_url('assets/js/jquery.magnific-popup.js');?>"></script>
 	<script>
@@ -242,7 +215,30 @@
 	<script src="<?=base_url('assets/js/bootstrap.js');?>"></script>
 	<!-- //for bootstrap working -->
 	<!-- //js-files -->
+<!-- script for tabs -->
+<script>
+		$(function () {
 
+			var menu_ul = $('.faq > li > ul'),
+				menu_a = $('.faq > li > a');
+
+			menu_ul.hide();
+
+			menu_a.click(function (e) {
+				e.preventDefault();
+				if (!$(this).hasClass('active')) {
+					menu_a.removeClass('active');
+					menu_ul.filter(':visible').slideUp('normal');
+					$(this).addClass('active').next().stop(true, true).slideDown('normal');
+				} else {
+					$(this).removeClass('active');
+					$(this).next().stop(true, true).slideUp('normal');
+				}
+			});
+
+		});
+	</script>
+	<!-- script for tabs -->
 </body>
 
 </html>

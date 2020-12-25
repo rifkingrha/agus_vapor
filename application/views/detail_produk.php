@@ -51,6 +51,18 @@
 						<?= $produk['keterangan']; ?>
 					</p>
 				</div>
+				<div class="product-single-w3l">
+					<p>
+					<i class="fa fa-info-circle" aria-hidden="true"></i>Bekas/Baru :
+					</p>
+					<p>
+						<?php if ($produk['bekas_baru']==0) {
+							echo "Baru";
+						} else {
+							echo "Bekas";
+						}?>
+					</p>
+				</div>
 				<div class="occasion-cart">
 					<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
 						<form action="#" method="post">
