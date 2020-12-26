@@ -68,7 +68,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <?php else : ?>
 				<ul>
 					<li>
-						<span class="fa fa-phone" aria-hidden="true"></span> 001 234 5678
+						<span class="fa fa-phone" aria-hidden="true"></span> 0818 1818 1818
 					</li>
 					<li>
 						<a href="#" data-toggle="modal" data-target="#myModal1">
