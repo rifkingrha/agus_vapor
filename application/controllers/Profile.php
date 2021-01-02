@@ -18,6 +18,7 @@ class Profile extends CI_Controller {
 		$id_customer = $this->input->post('id_customer');
 		$data = array(
 			'nama_lengkap' => $this->input->post('nama_lengkap'),
+			'tanggal_lahir' => $this->input->post('tanggal_lahir'),
 			'no_telp' => $this->input->post('no_telp'),
 			'email' => $this->input->post('email'),
 			'kota_kecamatan1' => $this->input->post('kota_kecamatan1'),

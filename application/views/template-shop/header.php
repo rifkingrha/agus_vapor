@@ -6,6 +6,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE html>
 <html lang="zxx">
+
 <head>
 	<title>Agus Vapor - Shop</title>
 	<!--/tags -->
@@ -14,7 +15,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<meta name="keywords" content="Grocery Shoppy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 	<script>
-		addEventListener("load", function () {
+		addEventListener("load", function() {
 			setTimeout(hideURLbar, 0);
 		}, false);
 
@@ -23,19 +24,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		}
 	</script>
 	<!--//tags -->
-	<link href="<?php echo base_url('assets/css/bootstrap.css')?>" rel="stylesheet" type="text/css" media="all" />
-	<link href="<?php echo base_url('assets/css/style.css')?>" rel="stylesheet" type="text/css" media="all" />
-	<link href="<?php echo base_url('assets/css/font-awesome.css')?>" rel="stylesheet">
+	<link href="<?php echo base_url('assets/css/bootstrap.css') ?>" rel="stylesheet" type="text/css" media="all" />
+	<link href="<?php echo base_url('assets/css/style.css') ?>" rel="stylesheet" type="text/css" media="all" />
+	<link href="<?php echo base_url('assets/css/font-awesome.css') ?>" rel="stylesheet">
 	<!--pop-up-box-->
-	<link href="<?php echo base_url('assets/css/popuo-box.css')?>" rel="stylesheet" type="text/css" media="all" />
+	<link href="<?php echo base_url('assets/css/popuo-box.css') ?>" rel="stylesheet" type="text/css" media="all" />
 	<!--//pop-up-box-->
 	<!-- flexslider -->
-	<link rel="stylesheet" href="<?php echo base_url('assets/css/flexslider.css')?>" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php echo base_url('assets/css/flexslider.css') ?>" type="text/css" media="screen" />
 	<!-- price range -->
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/jquery-ui1.css')?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/jquery-ui1.css') ?>">
 	<!-- fonts -->
 	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
 </head>
+
 <body>
 	<!-- header-bot-->
 	<div class="header-bot">
@@ -51,39 +53,39 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<!-- header-bot -->
 			<div class="col-md-8 header">
 				<!-- header lists -->
-                <?php if ( $this->session->userdata('logged_in') === true ) : ?>
-                <ul>
-					<li>
-						<span class="fa fa-user" aria-hidden="true"></span> <?php echo $this->session->userdata('username');?>
-					</li>
-					<li>
-						<a href="<?=site_url('Profile')?>">
-							<span class="fa fa-pencil-square-o" aria-hidden="true"></span> Profile </a>
-					</li>
-                    <li>
-						<a href="<?php echo site_url('Auth/logout');?>">
-							<span class="fa fa-unlock-alt" aria-hidden="true"></span> Log Out </a>
-					</li>
-				</ul>
-                <?php else : ?>
-				<ul>
-					<li>
-						<span class="fa fa-phone" aria-hidden="true"></span> 0818 1818 1818
-					</li>
-					<li>
-						<a href="#" data-toggle="modal" data-target="#myModal1">
-							<span class="fa fa-unlock-alt" aria-hidden="true"></span> Sign In </a>
-					</li>
-					<li>
-						<a href="#" data-toggle="modal" data-target="#myModal2">
-							<span class="fa fa-pencil-square-o" aria-hidden="true"></span> Sign Up </a>
-					</li>
-				</ul>
-                <?php endif; ?>
+				<?php if ($this->session->userdata('logged_in') === true) : ?>
+					<ul>
+						<li>
+							<span class="fa fa-user" aria-hidden="true"></span> <?php echo $this->session->userdata('username'); ?>
+						</li>
+						<li>
+							<a href="<?= site_url('Profile') ?>">
+								<span class="fa fa-pencil-square-o" aria-hidden="true"></span> Profile </a>
+						</li>
+						<li>
+							<a href="<?php echo site_url('Auth/logout'); ?>">
+								<span class="fa fa-unlock-alt" aria-hidden="true"></span> Log Out </a>
+						</li>
+					</ul>
+				<?php else : ?>
+					<ul>
+						<li>
+							<span class="fa fa-phone" aria-hidden="true"></span> 0818 1818 1818
+						</li>
+						<li>
+							<a href="#" data-toggle="modal" data-target="#myModal1">
+								<span class="fa fa-unlock-alt" aria-hidden="true"></span> Sign In </a>
+						</li>
+						<li>
+							<a href="#" data-toggle="modal" data-target="#myModal2">
+								<span class="fa fa-pencil-square-o" aria-hidden="true"></span> Sign Up </a>
+						</li>
+					</ul>
+				<?php endif; ?>
 				<!-- //header lists -->
 				<!-- search -->
 				<div class="agileits_search">
-					<form action="<?php echo site_url('Produk/search')?>" method="post">
+					<form action="<?php echo site_url('Produk/search') ?>" method="post">
 						<input name="search" type="search" placeholder="Cari barang yang kamu inginkan" required="">
 						<button type="submit" class="btn btn-default" aria-label="Left Align">
 							<span class="fa fa-search" aria-hidden="true"> </span>
@@ -129,7 +131,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<a href="#" data-toggle="modal" data-target="#myModal2">
 								Daftar Sekarang</a>
 						</p>
-						<form action="<?php echo site_url('Auth/login')?>" method="post">
+						<form action="<?php echo site_url('Auth/login') ?>" method="post">
 							<div class="styled-input agile-styled-input-top">
 								<input type="text" placeholder="Username" name="username" required="">
 							</div>
@@ -166,21 +168,30 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<p>
 							Ayo bergabung di Agus Vapor! Daftarkan Akunmu.
 						</p>
-						<form action="<?php echo site_url('Auth/registrasi')?>" method="post">
-							<div class="styled-input agile-styled-input-top">
-								<input type="text" placeholder="Nama Lengkap" name="nama" required="">
+						<form action="<?php echo site_url('Auth/registrasi') ?>" method="post">
+							<div class="form-group">
+								<label>Nama Lengkap :</label>
+								<input type="text" class="form-control"  name="nama" required="">
 							</div>
-							<div class="styled-input">
-								<input type="email" placeholder="E-mail" name="email" required="">
+							<div class="form-group">
+								<label>E-mail :</label>
+								<input type="email" class="form-control"  name="email" required="">
 							</div>
-                            <div class="styled-input">
-								<input type="text" placeholder="Username" name="username" required="">
+							<div class="form-group">
+								<label>Username :</label>
+								<input type="text" class="form-control" name="username" required="">
 							</div>
-							<div class="styled-input">
-								<input type="password" placeholder="Password" name="password" id="password1" required="">
+							<div class="form-group">
+								<label>Password :</label>
+								<input type="password" class="form-control"  name="password" id="password1" required="">
 							</div>
-							<div class="styled-input">
-								<input type="password" placeholder="Konfirmasi Password" name="konfirm_password" id="password2" required="">
+							<div class="form-group">
+								<label>Konfirmasi Password :</label>
+								<input type="password" class="form-control"  name="konfirm_password" id="password2" required="">
+							</div>
+							<div class="form-group">
+								<label>Tanggal Lahir :</label>
+								<input type="date" class="form-control" name="tanggal_lahir" id="tanggal_lahir" />
 							</div>
 							<input type="submit" value="Sign Up">
 						</form>
@@ -204,8 +215,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="container">
 						<!-- Brand and toggle get grouped for better mobile display -->
 						<div class="navbar-header">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-							    aria-expanded="false">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 								<span class="sr-only">Toggle navigation</span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
@@ -228,11 +238,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<div class="agile_inner_drop_nav_info">
 											<div class="col-sm-4 multi-gd-img">
 												<ul class="multi-column-dropdown">
-													<?php foreach ($all_kat as $res):?>
-													<li>
-														<a href="<?= site_url('Produk/kategori/'.$res['id_kategori']); ?>"><?=$res['nama_kategori']?></a>
-													</li>
-													<?php endforeach;?>
+													<?php foreach ($all_kat as $res) : ?>
+														<li>
+															<a href="<?= site_url('Produk/kategori/' . $res['id_kategori']); ?>"><?= $res['nama_kategori'] ?></a>
+														</li>
+													<?php endforeach; ?>
 												</ul>
 											</div>
 											<div class="clearfix"></div>

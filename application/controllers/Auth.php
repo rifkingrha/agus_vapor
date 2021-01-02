@@ -30,7 +30,8 @@ class Auth extends CI_Controller {
 		$data = array(
 			'nama_lengkap' => $this->input->post('nama'),
 			'username'	=> $username,
-			'password'	=> $password,
+            'password'	=> $password,
+            'tanggal_lahir' => $this->input->post('tanggal_lahir'),
 			'email'	=> $this->input->post('email')
 		);
         $this->Customer_model->add_data_customer($data);

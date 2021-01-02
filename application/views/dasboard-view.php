@@ -88,12 +88,6 @@
 var ctx = document.getElementById('chart_dashboard').getContext('2d');
     tahun = moment().format("YYYY");
     bulan = moment().format("MM");
-    produk = {
-        label: 'Produk',
-        data: <?= json_encode($chart_produk); ?>,
-        backgroundColor: "rgba(192, 222, 2, 0.64)",
-        borderWidth: 1
-    };
     pesanan_masuk = {
         label: 'Pesanan Masuk',
         data: <?= json_encode($chart_pesanan_masuk); ?>,
@@ -110,7 +104,7 @@ var ctx = document.getElementById('chart_dashboard').getContext('2d');
     type: 'bar',
     data: {
         labels: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni','Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'],
-        datasets: [produk,pesanan_masuk,pesanan_selesai]
+        datasets: [pesanan_masuk,pesanan_selesai]
     },
     options: {
         scales: {

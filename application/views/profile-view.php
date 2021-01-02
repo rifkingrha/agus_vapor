@@ -78,6 +78,12 @@
                                 </div>
                             </div>
                             <div class="form-group row">
+                                <label for="inputName" class="col-sm-3 col-form-label">Tanggal Lahir</label>
+                                <div class="col-sm-9">
+                                    <input type="date" class="form-control" value="<?= $profile['tanggal_lahir']; ?>" name="tanggal_lahir" id="tanggal_lahir" placeholder="Tanggal Lahir">
+                                </div>
+                            </div>
+                            <div class="form-group row">
                                 <label for="no_telp" class="col-sm-3 col-form-label">Nomor Telepon</label>
                                 <div class="col-sm-9">
                                     <input type="text" class="form-control" value="<?= $profile['no_telp']; ?>" name="no_telp" id="no_telp" placeholder="Nomor Telepon">
